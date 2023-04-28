@@ -1,0 +1,33 @@
+{
+  "name": "awesome-books",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KAYEMBAJONATHAN/Awesome-books.git"
+  },
+  "keywords": [],
+  "author": "Jonathn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KAYEMBAJONATHAN/Awesome-books/issues"
+  },
+  "homepage": "https://github.com/KAYEMBAJONATHAN/Awesome-books#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.1",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
