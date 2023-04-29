@@ -1,12 +1,12 @@
+import './index.css';
+import { DateTime } from 'luxon';
+import navigation from './modules/navigation';
+import books from './modules/books';
+import displayBook from './modules/displayBook';
 
+displayBook();
+navigation();
+books();
 
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+const timeContent = document.getElementById('time');
+timeContent.textContent = DateTime.now().toISO();
