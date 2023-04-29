@@ -2,7 +2,7 @@ const displayBook = () => {
   const booklist = document.querySelector('.booklist');
   let bookArray = [];
   if (localStorage.getItem('bookOfLife')) {
-    bookArray = JSON.parse(localStorage.getItem('bookOfLife')); 
+    bookArray = JSON.parse(localStorage.getItem('bookOfLife'));
   }
 
   let content = '';

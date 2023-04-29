@@ -1,7 +1,7 @@
 import './index.css';
-import navigation from './modules/navigation';
-import books from './modules/books';
-import displayBook from './modules/displayBook';
+import navigation from './modules/navigation.js';
+import books from './modules/books.js';
+import displayBook from './modules/displayBook.js';
 
 const { DateTime } = require('luxon');
 
