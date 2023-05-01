@@ -1,3 +1,4 @@
+const navigation = () => {
 const listLink = document.getElementById('list');
 const addLink = document.getElementById('add');
 const contactLink = document.getElementById('contact');
@@ -22,3 +23,5 @@ contactLink.addEventListener('click', () => {
   formSection.style.display = 'none';
   contact.style.display = 'block';
 });
+}
+export default navigation;
