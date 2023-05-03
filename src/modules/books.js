@@ -2,17 +2,22 @@ const books = () => {
   const formData = document.querySelector('.form-control');
   const bookName = document.getElementById('name');
   const bookAuthor = document.getElementById('author');
-  let bookArray = [];
-  if (localStorage.getItem('bookOfLife')) {
-    bookArray = JSON.parse(localStorage.getItem('bookOfLife'));
-  }
+  const  bookArray = [] || JSON.parse(localStorage.getItem('story'));
+  // if (localStorage.getItem('story')) {
+  //   bookArray = JSON.parse(localStorage.getItem('story'));
+  // }
 
   formData.addEventListener('submit', (e) => {
     e.preventDefault();
-
-    const book = { title: bookName.value, author: bookAuthor.value };
-    bookArray.push(book);
-    localStorage.setItem('bookOfLife', JSON.stringify(bookArray));
+    const { length } = bookArray;
+    let id = 0;
+    if (length > 0) {
+      id = length;
+    }
+    const book = { title: bookName.value, author: bookAuthor.value, id };
+    let data = JSON.parse(localStorage.getItem('story'));
+    data.push(book)
+    localStorage.setItem('story', JSON.stringify(data));
     formData.reset();
   });
 };

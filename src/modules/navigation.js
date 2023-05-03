@@ -1,3 +1,5 @@
+import displayBook from './displayBook.js';
+
 const navigation = () => {
   const listLink = document.getElementById('list');
   const addLink = document.getElementById('add');
@@ -7,6 +9,7 @@ const navigation = () => {
   const booklist = document.querySelector('.booklist');
 
   listLink.addEventListener('click', () => {
+    displayBook();
     booklist.style.display = 'block';
     formSection.style.display = 'none';
     contact.style.display = 'none';
