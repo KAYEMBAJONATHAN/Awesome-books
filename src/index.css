@@ -64,4 +64,14 @@ footer {
 .booklist {
   justify-content: center;
   align-items: center;
+  margin: 0 40vw;
+}
+
+.single-book {
+  list-style: none;
+  background-color: #eee;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
 }
