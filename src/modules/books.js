@@ -15,7 +15,7 @@ const books = () => {
       id = length;
     }
     const book = { title: bookName.value, author: bookAuthor.value, id };
-    const data = JSON.parse(localStorage.getItem('story'));
+    const data = bookArray;
     data.push(book);
     localStorage.setItem('story', JSON.stringify(data));
     formData.reset();

@@ -22,7 +22,7 @@ const displayBook = () => {
     bookArray.forEach((element) => {
       const li = document.createElement('li');
       li.classList.add('single-book');
-      li.innerHTML = `${element.title} ${element.author} <button class="book-btn" id=${element.id}>remove</button>`;
+      li.innerHTML = `"${element.title}" by ${element.author} <button class="book-btn" id=${element.id}>remove</button>`;
       booklist.appendChild(li);
 
       const button = li.querySelector('button');
